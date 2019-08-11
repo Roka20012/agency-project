@@ -22,32 +22,11 @@
 .main-footer a:hover {
     text-decoration: underline;
 }
-.ft-title {
-    color: #fff;
-    font-family: "Merriweather", serif;
-    font-size: 1.375rem;
-    padding-bottom: 0.625rem;
-}
 
 /* Footer main */
 .ft-main {
-    padding: 1.25rem 1.875rem;
     display: flex;
     flex-wrap: wrap;
-}
-@media only screen and (min-width: 29.8125rem /* 477px */) {
-    .ft-main {
-        justify-content: space-evenly;
-    }
-}
-@media only screen and (min-width: 77.5rem /* 1240px */) {
-    .ft-main {
-        justify-content: space-evenly;
-    }
-}
-.ft-main-item {
-    padding: 1.25rem;
-    min-width: 12.5rem;
 }
 
 /* Footer main | Newsletter form */
@@ -69,34 +48,21 @@
     margin-top: 0.3125rem;
 }
 /* Footer social */
-.ft-social {
-    padding: 0 1.875rem 1.25rem;
-}
-.ft-social-list {
+
+.social {
     display: flex;
     justify-content: center;
     border-top: 1px #777 solid;
-    padding-top: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 30px;
 }
-.ft-social-list li {
-    margin: 0.5rem;
-    font-size: 1.25rem;
-}
+
 /* Footer legal */
-.ft-legal {
-    padding: 0.9375rem 1.875rem;
+.legal {
+    padding: 5px;
     background-color: #333;
-}
-.ft-legal-list {
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
 }
-.ft-legal-list li {
-    margin: 0.125rem 0.625rem;
-    white-space: nowrap;
-}
-/* one before the last child */
-.ft-legal-list li:nth-last-child(2) {
-    flex: 1;
-}
+

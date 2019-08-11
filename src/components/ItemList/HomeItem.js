@@ -5,8 +5,16 @@ export default props => {
         img,
         price,
         description,
-        info: { kitchen, bed, bath, area, action }
+        info: { kitchen, bed, bath, area, action, country }
     } = props;
+
+    let countryName;
+
+    if(country === "ua") {
+        countryName = "Ukraine";
+    } else {
+        countryName = "Russia";
+    }
 
     return (
         <div className="item">
@@ -19,6 +27,7 @@ export default props => {
             <span className="item-details">
                 {kitchen} kitchens, {bed} beds, {bath} bathrooms... {area}ftsq
             </span>
+            <p className="item-details">Country {countryName}</p>
             <span className="price">
                 Price ${price} for {action}
             </span>

@@ -1,119 +1,386 @@
 [
-    {
-        "img": "property_3.jpg",
-        "price": 300,
-        "description": "Fuisque dictum tortor at purus libero",
-        "info": {
-            "kitchen": 2,
-            "bed": 3,
-            "bath": 1,
-            "area": 120,
-            "id": 299202,
-            "action": "buy"
+    [
+        {
+            "img": "property_3.jpg",
+            "price": 300,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 2,
+                "bed": 3,
+                "bath": 1,
+                "area": 120,
+                "id": 299202,
+                "action": "buy",
+                "country": "ru"
+            }
+        },
+        {
+            "img": "property_1.jpg",
+            "price": 500,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 1,
+                "bed": 2,
+                "bath": 3,
+                "area": 240,
+                "id": 299203,
+                "action": "buy",
+                "country": "ua"
+            }
+        },
+        {
+            "img": "property_2.jpg",
+            "price": 100,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 4,
+                "bed": 2,
+                "bath": 1,
+                "area": 100,
+                "id": 292340,
+                "action": "rent",
+                "country": "ru"
+            }
+        },
+        {
+            "img": "property_3.jpg",
+            "price": 300,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 2,
+                "bed": 3,
+                "bath": 1,
+                "area": 120,
+                "id": 293232,
+                "action": "buy",
+                "country": "ua"
+            }
+        },
+        {
+            "img": "property_1.jpg",
+            "price": 500,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 1,
+                "bed": 2,
+                "bath": 3,
+                "area": 240,
+                "id": 799203,
+                "action": "buy",
+                "country": "ru"
+            }
+        },
+        {
+            "img": "property_2.jpg",
+            "price": 100,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 4,
+                "bed": 2,
+                "bath": 1,
+                "area": 100,
+                "id": 299181,
+                "action": "rent",
+                "country": "ua"
+            }
+        },
+        {
+            "img": "property_3.jpg",
+            "price": 300,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 2,
+                "bed": 3,
+                "bath": 1,
+                "area": 120,
+                "id": 189232,
+                "action": "buy",
+                "country": "ru"
+            }
+        },
+        {
+            "img": "property_1.jpg",
+            "price": 500,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 1,
+                "bed": 2,
+                "bath": 3,
+                "area": 240,
+                "id": 767203,
+                "action": "buy",
+                "country": "ua"
+            }
+        },
+        {
+            "img": "property_2.jpg",
+            "price": 100,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 4,
+                "bed": 2,
+                "bath": 1,
+                "area": 100,
+                "id": 298981,
+                "action": "rent",
+                "country": "ru"
+            }
         }
-    },
-    {
-        "img": "property_1.jpg",
-        "price": 500,
-        "description": "Fuisque dictum tortor at purus libero",
-        "info": {
-            "kitchen": 1,
-            "bed": 2,
-            "bath": 3,
-            "area": 240,
-            "id": 299203,
-            "action": "rent"
+    ],
+    [
+        {
+            "img": "img/property_3.jpg",
+            "price": 400,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 2,
+                "bed": 3,
+                "bath": 6,
+                "area": 200,
+                "id": 296293,
+                "action": "buy",
+                "country": "ua"
+            }
+        },
+        {
+            "img": "property_1.jpg",
+            "price": 500,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 1,
+                "bed": 2,
+                "bath": 3,
+                "area": 240,
+                "id": 249203,
+                "action": "rent",
+                "country": "ru"
+            }
+        },
+        {
+            "img": "property_2.jpg",
+            "price": 100,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 4,
+                "bed": 2,
+                "bath": 1,
+                "area": 100,
+                "id": 229201,
+                "action": "buy",
+                "country": "ua"
+            }
+        },
+        {
+            "img": "img/property_3.jpg",
+            "price": 400,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 2,
+                "bed": 3,
+                "bath": 6,
+                "area": 200,
+                "id": 299023,
+                "action": "buy",
+                "country": "ru"
+            }
+        },
+        {
+            "img": "property_1.jpg",
+            "price": 500,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 1,
+                "bed": 2,
+                "bath": 3,
+                "area": 240,
+                "id": 249003,
+                "action": "rent",
+                "country": "ua"
+            }
+        },
+        {
+            "img": "property_2.jpg",
+            "price": 100,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 4,
+                "bed": 2,
+                "bath": 1,
+                "area": 100,
+                "id": 227998,
+                "action": "buy",
+                "country": "ru"
+            }
+        },
+        {
+            "img": "img/property_3.jpg",
+            "price": 400,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 2,
+                "bed": 3,
+                "bath": 6,
+                "area": 200,
+                "id": 296000,
+                "action": "buy",
+                "country": "ua"
+            }
+        },
+        {
+            "img": "property_1.jpg",
+            "price": 500,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 1,
+                "bed": 2,
+                "bath": 3,
+                "area": 240,
+                "id": 22222,
+                "action": "rent",
+                "country": "ru"
+            }
+        },
+        {
+            "img": "property_2.jpg",
+            "price": 100,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 4,
+                "bed": 2,
+                "bath": 1,
+                "area": 100,
+                "id": 111101,
+                "action": "buy",
+                "country": "ua"
+            }
         }
-    },
-    {
-        "img": "property_2.jpg",
-        "price": 100,
-        "description": "Fuisque dictum tortor at purus libero",
-        "info": {
-            "kitchen": 4,
-            "bed": 2,
-            "bath": 1,
-            "area": 100,
-            "id": 299201,
-            "action": "buy"
+    ],
+    [
+        {
+            "img": "img/property_3.jpg",
+            "price": 400,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 2,
+                "bed": 3,
+                "bath": 6,
+                "area": 200,
+                "id": 223495293,
+                "action": "rent",
+                "country": "ua"
+            }
+        },
+        {
+            "img": "property_2.jpg",
+            "price": 100,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 4,
+                "bed": 2,
+                "bath": 1,
+                "area": 100,
+                "id": 2452244401,
+                "action": "buy",
+                "country": "ru"
+            }
+        },
+        {
+            "img": "img/property_3.jpg",
+            "price": 400,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 2,
+                "bed": 3,
+                "bath": 6,
+                "area": 200,
+                "id": 297823493,
+                "action": "rent",
+                "country": "ua"
+            }
+        },
+        {
+            "img": "img/property_3.jpg",
+            "price": 400,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 2,
+                "bed": 3,
+                "bath": 6,
+                "area": 200,
+                "id": 295234293,
+                "action": "rent",
+                "country": "ru"
+            }
+        },
+        {
+            "img": "property_2.jpg",
+            "price": 100,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 4,
+                "bed": 2,
+                "bath": 1,
+                "area": 100,
+                "id": 245234201,
+                "action": "buy",
+                "country": "ru"
+            }
+        },
+        {
+            "img": "img/property_3.jpg",
+            "price": 400,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 2,
+                "bed": 3,
+                "bath": 6,
+                "area": 200,
+                "id": 297224893,
+                "action": "rent",
+                "country": "ru"
+            }
+        },
+        {
+            "img": "img/property_3.jpg",
+            "price": 400,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 2,
+                "bed": 3,
+                "bath": 6,
+                "area": 200,
+                "id": 2952293,
+                "action": "rent",
+                "country": "ru"
+            }
+        },
+        {
+            "img": "property_2.jpg",
+            "price": 100,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 4,
+                "bed": 2,
+                "bath": 1,
+                "area": 100,
+                "id": 245238901,
+                "action": "buy",
+                "country": "ru"
+            }
+        },
+        {
+            "img": "img/property_3.jpg",
+            "price": 400,
+            "description": "Fuisque dictum tortor at purus libero",
+            "info": {
+                "kitchen": 2,
+                "bed": 3,
+                "bath": 6,
+                "area": 200,
+                "id": 22342393,
+                "action": "rent",
+                "country": "ru"
+            }
         }
-    },
-    {
-        "img": "img/property_3.jpg",
-        "price": 400,
-        "description": "Fuisque dictum tortor at purus libero",
-        "info": {
-            "kitchen": 2,
-            "bed": 3,
-            "bath": 6,
-            "area": 200,
-            "id": 296293,
-            "action": "buy"
-        }
-    },
-    {
-        "img": "property_1.jpg",
-        "price": 500,
-        "description": "Fuisque dictum tortor at purus libero",
-        "info": {
-            "kitchen": 1,
-            "bed": 2,
-            "bath": 3,
-            "area": 240,
-            "id": 249203,
-            "action": "rent"
-        }
-    },
-    {
-        "img": "property_2.jpg",
-        "price": 100,
-        "description": "Fuisque dictum tortor at purus libero",
-        "info": {
-            "kitchen": 4,
-            "bed": 2,
-            "bath": 1,
-            "area": 100,
-            "id": 229201,
-            "action": "buy"
-        }
-    },
-    {
-        "img": "img/property_3.jpg",
-        "price": 400,
-        "description": "Fuisque dictum tortor at purus libero",
-        "info": {
-            "kitchen": 2,
-            "bed": 3,
-            "bath": 6,
-            "area": 200,
-            "id": 295293,
-            "action": "rent"
-        }
-    },
-    {
-        "img": "property_2.jpg",
-        "price": 100,
-        "description": "Fuisque dictum tortor at purus libero",
-        "info": {
-            "kitchen": 4,
-            "bed": 2,
-            "bath": 1,
-            "area": 100,
-            "id": 245201,
-            "action": "buy"
-        }
-    },
-    {
-        "img": "img/property_3.jpg",
-        "price": 400,
-        "description": "Fuisque dictum tortor at purus libero",
-        "info": {
-            "kitchen": 2,
-            "bed": 3,
-            "bath": 6,
-            "area": 200,
-            "id": 297893,
-            "action": "rent"
-        }
-    }
+    ]
 ]

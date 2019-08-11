@@ -1,10 +1,9 @@
 .form-container {
-    width: 90%;
+    width: 70%;
     padding: 10px 20px;
     margin: 120px auto;
     padding: 20px;
     background: #cfd8dc;
-    border-radius: 8px;
     font-family: Georgia, "Times New Roman", Times, serif;
 }
 .form-container .title {
@@ -74,7 +73,6 @@
     line-height: 30px;
     text-align: center;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-    border-radius: 15px 15px 15px 0px;
 }
 
 .form-container button {
@@ -89,7 +87,6 @@
     cursor: pointer;
     border: none;
     transition: all ease 0.2s;
-    border-radius: 5px;
 }
 
 .form-container button:hover {

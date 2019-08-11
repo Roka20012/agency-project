@@ -1,11 +1,21 @@
 import React from "react";
 import SearchField from "./SearchFields";
 import Type from "./Type";
+import "./Search.css";
 
 export default class extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            check: false
+        }
     }
+
+    handleCheck = () => (
+        this.setState({
+            check: !this.state.check
+        })
+    ) 
 
     render() {
         const {
@@ -20,15 +30,20 @@ export default class extends React.Component {
                 maxBeds,
                 minArea,
                 maxArea,
-                action
+                action,
+                country
             },
             handleChange,
             handleSubmit
         } = this.props;
+        const {check} = this.state;
         return (
             <section className="search">
-                <div className="wrapper">
-                    <span className="arrow" />
+                <label htmlFor="burger" className="buy-something-label">
+                    Filter
+                </label>
+                <input className="burger-menu" type="checkbox" id="burger" checked={check} onClick={this.handleCheck}/>
+                <div className="wrapper show-buying-window">
                     <form action="#" onSubmit={handleSubmit}>
                         <SearchField
                             title="Price"
@@ -92,8 +107,12 @@ export default class extends React.Component {
                             handleChange={handleChange}
                         />
                         <div className="title">Type</div>
-                        <Type value={action} handleChange={handleChange} />
-                        <button className="apply">Apply</button>
+                        <Type value={action} handleChange={handleChange} changeProp={"action"} info={{title: ["Buy", "Rent"], type: ["buy", "rent"]}}/>
+                        <div className="title">Country</div>
+                        <Type value={country} handleChange={handleChange} changeProp={"country"} info={{title: ["Ukraine", "Russia"], type: ["ua", "ru"]}}/>
+                        <div className="button-container">
+                            <button className="apply" onClick={this.handleCheck}>Apply</button>
+                        </div>
                     </form>
                 </div>
             </section>

@@ -4,7 +4,6 @@ import HomeList from "../ItemList";
 import Search from "../Search";
 import Pagination from "../Pagination";
 
-
 import apiData from "../../mock-api-data";
 
 export default class extends React.Component {
@@ -22,9 +21,12 @@ export default class extends React.Component {
                 maxBeds: "",
                 minArea: "",
                 maxArea: "",
-                action: "all"
+                action: "all",
+                country: "all"
             },
-            data: apiData
+            data: apiData,
+            pageCount: apiData.length,
+            currentPage: 1
         };
     }
 
@@ -38,105 +40,123 @@ export default class extends React.Component {
     };
 
     itemFilter = (apiData, filterData) => {
+        let allItemList = [];
         let itemList = [];
+        console.log("pageCount", this.state.pageCount);
 
-        apiData.forEach(el => {
-            let { info, price } = el;
-            let flag = true;
+        apiData.forEach((element, index, arr) => {
+            element.forEach((el, index2, arr2) => {
+                let { info, price } = el;
+                let flag = true;
 
-            if (filterData.action !== "all") {
-                if (info.action !== filterData.action) {
+                if (filterData.action !== "all") {
+                    if (info.action !== filterData.action) {
+                        flag = false;
+                    }
+                }
+
+                if (filterData.country !== "all") {
+                    if (info.country !== filterData.country) {
+                        flag = false;
+                    }
+                }
+
+                if (
+                    (filterData.minPrice !== "" ||
+                        filterData.maxPrice !== "") &&
+                    (filterData.minPrice >= price ||
+                        filterData.maxPrice <= price)
+                ) {
                     flag = false;
                 }
-            }
 
-            if (
-                !(
-                    filterData.minPrice <= price && filterData.maxPrice >= price
-                ) &&
-                filterData.maxPrice !== ""
-            ) {
-                flag = false;
-            }
-
-            for (let key in info) {
-                switch (key) {
-                    case "kitchen":
-                        if (
-                            !(
-                                filterData.minKitchens <= info[key] &&
-                                filterData.maxKitchens >= info[key]
-                            ) &&
-                            filterData.maxKitchens !== ""
-                        ) {
-                            flag = false;
-                        }
-                        break;
-                    case "bath":
-                        if (
-                            !(
-                                filterData.minBathrooms <= info[key] &&
-                                filterData.maxBathrooms >= info[key]
-                            ) &&
-                            filterData.maxBathrooms !== ""
-                        ) {
-                            flag = false;
-                        }
-                        break;
-                    case "bed":
-                        if (
-                            !(
-                                filterData.minBeds <= info[key] &&
-                                filterData.maxBeds >= info[key]
-                            ) &&
-                            filterData.maxBeds !== ""
-                        ) {
-                            flag = false;
-                        }
-                        break;
-                    case "area":
-                        if (
-                            !(
-                                filterData.minArea <= info[key] &&
-                                filterData.maxArea >= info[key]
-                            ) &&
-                            filterData.maxArea !== ""
-                        ) {
-                            flag = false;
-                        }
-                        break;
+                for (let key in info) {
+                    switch (key) {
+                        case "kitchen":
+                            if (
+                                (filterData.minKitchens !== "" ||
+                                    filterData.maxKitchens !== "") &&
+                                (filterData.minKitchens >= info[key] ||
+                                    filterData.maxKitchens <= info[key])
+                            ) {
+                                flag = false;
+                            }
+                            break;
+                        case "bath":
+                            if (
+                                (filterData.minBathrooms !== "" ||
+                                    filterData.maxBathrooms !== "") &&
+                                (filterData.minBathrooms >= info[key] ||
+                                    filterData.maxBathrooms <= info[key])
+                            ) {
+                                flag = false;
+                            }
+                            break;
+                        case "bed":
+                            if (
+                                (filterData.minBeds !== "" ||
+                                    filterData.maxBeds !== "") &&
+                                (filterData.minBeds >= info[key] ||
+                                    filterData.maxBeds <= info[key])
+                            ) {
+                                flag = false;
+                            }
+                            break;
+                        case "area":
+                            if (
+                                (filterData.minArea !== "" ||
+                                    filterData.maxArea !== "") &&
+                                (filterData.minArea >= info[key] ||
+                                    filterData.maxArea <= info[key])
+                            ) {
+                                flag = false;
+                            }
+                            break;
+                        default:
+                            break;
+                    }
                 }
-            }
 
-            if (flag) {
-                itemList.push(el);
-            }
+                if (flag) {
+                    itemList.push(el);
+                }
+
+                if (
+                    itemList.length === 9 ||
+                    (arr.length === index + 1 &&
+                        arr2.length === index2 + 1 &&
+                        itemList.length !== 0)
+                ) {
+                    allItemList = [...allItemList, itemList];
+                    itemList = [];
+                }
+            });
         });
+        console.log("allItemList", allItemList);
         this.setState({
             search: {
                 ...this.state.search
             },
-            data: itemList
+            data: allItemList,
+            pageCount: allItemList.length - 1,
+            currentPage: 1
         });
     };
 
     handleSubmit = e => {
         e.preventDefault();
-
         this.itemFilter(apiData, this.state.search);
-        //Todo: якщо фільтр змінився перерендуррюємо ліст якщо не то не ))
-        //Todo Pagination
-        /*       let HomeList;
-        if(filter change) {
-            HomeList = <HomeList filter={search} data={apiData} key={0} />;
-        } else {
-            do nothing
-            return null
-        } */
+    };
+
+    handlePageChange = (page, e) => {
+        this.setState({
+            currentPage: page
+        });
     };
 
     render() {
-        const { search, data } = this.state;
+        const { search, data, pageCount, currentPage } = this.state;
+        console.log("search is ", search);
 
         return (
             <>
@@ -147,7 +167,13 @@ export default class extends React.Component {
                     handleSubmit={this.handleSubmit}
                 />
                 {/* <HomeList data={data} key={0} /> */}
-                <Pagination data={data}/>
+                <Pagination
+                    data={data}
+                    pageCount={pageCount}
+                    startPage={1}
+                    handlePageChange={this.handlePageChange}
+                    currentPage={currentPage}
+                />
             </>
         );
     }
