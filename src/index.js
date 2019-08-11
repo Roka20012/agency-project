@@ -9,6 +9,8 @@ import Buy from "./components/Buy";
 import Sell from "./components/Sell";
 import RegisterForm from "./components/Register";
 
+
+
 ReactDOM.render(
     <Router>
         <div>

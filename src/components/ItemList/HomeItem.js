@@ -5,24 +5,8 @@ export default props => {
         img,
         price,
         description,
-        info: { kitchen, bed, bath, area, action },
-        filter: {
-            minPrice,
-            maxPrice,
-            minBathrooms,
-            maxBathrooms,
-            minBeds,
-            maxBeds,
-            minKitchens,
-            maxKitchens,
-            minArea,
-            maxArea,
-            action: act
-        }
+        info: { kitchen, bed, bath, area, action }
     } = props;
-
-
-    console.log("props -> ", props.filter);
 
     return (
         <div className="item">
