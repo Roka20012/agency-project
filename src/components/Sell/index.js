@@ -1,4 +1,5 @@
-import Sell from "./Sell";
+import Sell from "./SellForm";
+import SellForm from "./SellForm";
 
-export { Sell };
-export default Sell;
+export { SellForm, Sell };
+export default SellForm;

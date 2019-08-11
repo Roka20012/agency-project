@@ -6,33 +6,38 @@ export default props => {
         price,
         description,
         info: { kitchen, bed, bath, area, action },
-        filter: { minPrice, maxPrice, minBathrooms, maxBathrooms, minBeds, maxBeds, minKitchens, maxKitchens, minArea, maxArea, action: act }
+        filter: {
+            minPrice,
+            maxPrice,
+            minBathrooms,
+            maxBathrooms,
+            minBeds,
+            maxBeds,
+            minKitchens,
+            maxKitchens,
+            minArea,
+            maxArea,
+            action: act
+        }
     } = props;
 
-    
+
+    console.log("props -> ", props.filter);
 
     return (
-        <li>
-            <a href="#">
-                <img
-                    src={require(`../../img/property_1.jpg`)}
-                    alt="home"
-                    title=""
-                    className="property_img"
-                />
-            </a>
-            <span className="price">
-                ${price} [for {action}]
+        <div className="item">
+            <img
+                className="item-img"
+                src="https://picsum.photos/300"
+                alt="item-img"
+            />
+            <p className="description">{description}</p>
+            <span className="item-details">
+                {kitchen} kitchens, {bed} beds, {bath} bathrooms... {area}ftsq
             </span>
-            <div className="property_details">
-                <h1>
-                    <a href="#">{description}</a>
-                </h1>
-                <h2>
-                    {kitchen} kitchens, {bed} bed,{bath} bath...{" "}
-                    <span className="property_size">{area}ftsq</span>
-                </h2>
-            </div>
-        </li>
+            <span className="price">
+                Price ${price} for {action}
+            </span>
+        </div>
     );
 };

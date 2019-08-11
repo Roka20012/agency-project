@@ -1,0 +1,101 @@
+.form-container {
+    width: 90%;
+    padding: 10px 20px;
+    margin: 120px auto;
+    padding: 20px;
+    background: #cfd8dc;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-container .title {
+    text-align: center;
+    color: #fff;
+    background: none;
+    font-size: 30px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+}
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container input[type="datetime"],
+.form-container input[type="email"],
+.form-container input[type="number"],
+.form-container input[type="search"],
+.form-container input[type="time"],
+.form-container input[type="url"],
+.form-container textarea,
+.form-container select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #e8eeef;
+    color: #263238;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.form-container input[type="text"]:focus,
+.form-container input[type="date"]:focus,
+.form-container input[type="datetime"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="number"]:focus,
+.form-container input[type="search"]:focus,
+.form-container input[type="time"]:focus,
+.form-container input[type="url"]:focus,
+.form-container textarea:focus,
+.form-container select:focus {
+    background: #90a4ae;
+}
+.form-container select {
+    -webkit-appearance: menulist-button;
+    height: 35px;
+}
+.form-container .number {
+    background: #1abc9c;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.form-container button {
+    width: 30%;
+    position: relative;
+    left: 70%;
+    height: 50px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: all ease 0.2s;
+    border-radius: 5px;
+}
+
+.form-container button:hover {
+    background-color: #43a047;
+}
+
+.form-container textarea {
+    resize: none;
+}

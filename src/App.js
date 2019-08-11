@@ -1,6 +1,6 @@
 import React from "react";
-import { Main } from "./components/Home";
-
+import { Main, Advantages, About } from "./components/Home";
+import Slider from "./components/Slider";
 import "./css/reset.css";
 import "./css/responsive.css";
 
@@ -9,6 +9,9 @@ class App extends React.Component {
         return (
             <>
                 <Main />
+                <About />
+                <Advantages />
+                <Slider />
             </>
         );
     }

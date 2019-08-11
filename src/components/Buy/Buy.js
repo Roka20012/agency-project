@@ -20,7 +20,7 @@ export default class extends React.Component {
                 maxBeds: "",
                 minArea: "",
                 maxArea: "",
-                action: "buy"
+                action: "all"
             }
         };
     }
@@ -34,12 +34,32 @@ export default class extends React.Component {
         });
     };
 
+    itemFilter = (apiData, filterData) => {
+        console.log("apiData %d, filteData %d", apiData, filterData);
+    }
+
+
+    handleSubmit = (e) => {
+        e.preventDefault();
+        this.itemFilter(apiData, this.state.search);
+        //Todo: якщо фільтр змінився перерендуррюємо ліст якщо не то не ))
+        //Todo Pagination
+        /*       let HomeList;
+        if(filter change) {
+            HomeList = <HomeList filter={search} data={apiData} key={0} />;
+        } else {
+            do nothing
+            return null
+        } */
+    };
+
     render() {
         const { search } = this.state;
+ 
         return (
             <>
                 <Main />
-                <Search search={search} handleChange={this.handleChange} />
+                <Search search={search} handleChange={this.handleChange} handleSubmit={this.handleSubmit}/>
                 <HomeList filter={search} data={apiData} key={0} />
             </>
         );

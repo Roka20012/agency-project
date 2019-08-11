@@ -1,53 +1,61 @@
 import React from 'react';
+import "./Footer.css";
 
 export default () => (
-    	<footer>
-		<div className="wrapper footer">
-			<ul>
-				<li className="links">
-					<ul>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Support</a></li>
-						<li><a href="#">Terms</a></li>
-						<li><a href="#">Policy</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</li>
-
-				<li className="links">
-					<ul>
-						<li><a href="#">Appartements</a></li>
-						<li><a href="#">Houses</a></li>
-						<li><a href="#">Villas</a></li>
-						<li><a href="#">Mansions</a></li>
-						<li><a href="#">Lviv</a></li>
-					</ul>
-				</li>
-
-				<li className="links">
-					<ul>
-						<li><a href="#">New York</a></li>
-						<li><a href="#">Los Anglos</a></li>
-						<li><a href="#">Miami</a></li>
-						<li><a href="#">Washington</a></li>
-						<li><a href="#">Kiev</a></li>
-					</ul>
-				</li>
-
-				<li className="about">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam pariatur consequatur repudiandae, quia eos, debitis expedita culpa delectus neque molestiae totam!</p>
-					<ul>
-						<li><a href="http://facebook.com/pixelhint" className="facebook" target="_blank"></a></li>
-						<li><a href="http://twitter.com/pixelhint" className="twitter" target="_blank"></a></li>
-						<li><a href="http://plus.google.com/+Pixelhint" className="google" target="_blank"></a></li>
-						<li><a href="#" className="skype"></a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-
-		<div className="copyrights wrapper">
-			Copyright © 2019  All Rights Reserved.
-		</div>
-	</footer>
+    <footer className="main-footer">
+        <section className="ft-main">
+            <div className="ft-main-item">
+            <h2 className="ft-title">About</h2>
+            <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+            </div>
+            <div className="ft-main-item">
+            <h2 className="ft-title">Resources</h2>
+            <ul>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">eBooks</a></li>
+                <li><a href="#">Webinars</a></li>
+            </ul>
+            </div>
+            <div className="ft-main-item">
+            <h2 className="ft-title">Contact</h2>
+            <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Advertise</a></li>
+            </ul>
+            </div>
+            <div className="ft-main-item">
+            <h2 className="ft-title">Stay Updated</h2>
+            <p>Subscribe to our newsletter to get our latest news.</p>
+            <form>
+                <input type="email" name="email" placeholder="Enter email address"/>
+                <input type="submit" value="Subscribe"/>
+            </form>
+            </div>
+        </section>
+        <section className="ft-social">
+            <ul className="ft-social-list">
+            <li><a href="#"><i className="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i className="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i className="fab fa-github"></i></a></li>
+            <li><a href="#"><i className="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i className="fab fa-youtube"></i></a></li>
+            </ul>
+        </section>
+        <section className="ft-legal">
+            <ul className="ft-legal-list">
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li>&copy; 2019 Copyright Nowrap Inc.</li>
+            </ul>
+        </section>
+    </footer>
 )

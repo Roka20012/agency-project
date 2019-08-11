@@ -1,19 +1,11 @@
 import React from "react";
 import HomeItem from "./HomeItem";
+import "./HomeList.css";
 
 export default ({ data, filter }) => (
-    <section className="listings">
-        <div className="wrapper">
-            <ul className="properties_list">
-                {console.log("filter", filter)}
-                {data.map(homeInfo => (
-                    <HomeItem
-                        {...homeInfo}
-                        filter={filter}
-                        key={homeInfo.info.id}
-                    />
-                ))}
-            </ul>
-        </div>
+    <section className="item-list">
+        {data.map(homeInfo => (
+            <HomeItem {...homeInfo} filter={filter} key={homeInfo.info.id} />
+        ))}
     </section>
 );
