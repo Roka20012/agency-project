@@ -9,7 +9,6 @@ export default class PaginationApp extends React.Component {
     render() {
         const { data, pageCount, handlePageChange, currentPage } = this.props;
         const total = data.length * limit;
-        // const { currentPage } = this.state;
 
         console.log("data is ->", data);
         return (

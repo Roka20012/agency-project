@@ -1,4 +1,4 @@
-/* Generic styling */
+
 * {
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
@@ -23,13 +23,11 @@
     text-decoration: underline;
 }
 
-/* Footer main */
 .ft-main {
     display: flex;
     flex-wrap: wrap;
 }
 
-/* Footer main | Newsletter form */
 .main-footer form {
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +45,6 @@
     padding: 0.625rem 0.9375rem;
     margin-top: 0.3125rem;
 }
-/* Footer social */
 
 .social {
     display: flex;
@@ -58,7 +55,6 @@
     font-size: 30px;
 }
 
-/* Footer legal */
 .legal {
     padding: 5px;
     background-color: #333;
