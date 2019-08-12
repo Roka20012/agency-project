@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "../../img/property_2.jpg";
-import { Route, Redirect } from "react-router";
 import ItemPage from "../ItemPage";
 
 export default class extends React.Component {
