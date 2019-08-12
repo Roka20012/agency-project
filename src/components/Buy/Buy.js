@@ -1,8 +1,8 @@
 import React from "react";
 import Main from "../Home";
-import HomeList from "../ItemList";
 import Search from "../Search";
 import Pagination from "../Pagination";
+import "../ItemList/HomeList.css";
 
 import apiData from "../../mock-api-data";
 
@@ -42,7 +42,6 @@ export default class extends React.Component {
     itemFilter = (apiData, filterData) => {
         let allItemList = [];
         let itemList = [];
-        console.log("pageCount", this.state.pageCount);
 
         apiData.forEach((element, index, arr) => {
             element.forEach((el, index2, arr2) => {
@@ -166,7 +165,6 @@ export default class extends React.Component {
                     handleChange={this.handleChange}
                     handleSubmit={this.handleSubmit}
                 />
-                {/* <HomeList data={data} key={0} /> */}
                 <Pagination
                     data={data}
                     pageCount={pageCount}

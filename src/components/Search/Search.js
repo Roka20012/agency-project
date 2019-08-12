@@ -42,7 +42,7 @@ export default class extends React.Component {
                 <label htmlFor="burger" className="buy-something-label">
                     Filter
                 </label>
-                <input className="burger-menu" type="checkbox" id="burger" checked={check} onClick={this.handleCheck}/>
+                <input className="burger-menu" type="checkbox" id="burger" checked={check} onChange={this.handleCheck}/>
                 <div className="wrapper show-buying-window">
                     <form action="#" onSubmit={handleSubmit}>
                         <SearchField

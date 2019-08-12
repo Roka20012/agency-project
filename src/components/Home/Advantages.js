@@ -1,5 +1,6 @@
 import React from "react";
 import "./Advantages.css";
+import Image from "../../img/property_3.jpg";
 
 export default () => (
     <section className="our-advantages">
@@ -7,16 +8,21 @@ export default () => (
         <div className="advantages">
             <div className="fast">
                 <h3>Fast</h3>
-                <img src="https://picsum.photos/300" alt="advantages-fast" />
+                <img style={styles} src={Image} alt="advantages-fast" />
             </div>
             <div className="fast">
                 <h3>Fast</h3>
-                <img src="https://picsum.photos/300" alt="advantages-fast" />
+                <img style={styles} src={Image} alt="advantages-fast" />
             </div>
             <div className="fast">
                 <h3>Fast</h3>
-                <img src="https://picsum.photos/300" alt="advantages-fast" />
+                <img style={styles} src={Image} alt="advantages-fast" />
             </div>
         </div>
     </section>
 );
+
+const styles = {
+    width: "300px",
+    height: "300px"
+};

@@ -1,7 +1,7 @@
 [
     [
         {
-            "img": "property_3.jpg",
+            "img": "property_2",
             "price": 300,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -15,7 +15,7 @@
             }
         },
         {
-            "img": "property_1.jpg",
+            "img": "property_3",
             "price": 500,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -29,7 +29,7 @@
             }
         },
         {
-            "img": "property_2.jpg",
+            "img": "property_1",
             "price": 100,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -43,7 +43,7 @@
             }
         },
         {
-            "img": "property_3.jpg",
+            "img": "property_2",
             "price": 300,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -57,7 +57,7 @@
             }
         },
         {
-            "img": "property_1.jpg",
+            "img": "property_1",
             "price": 500,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -71,7 +71,7 @@
             }
         },
         {
-            "img": "property_2.jpg",
+            "img": "property_3",
             "price": 100,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -85,7 +85,7 @@
             }
         },
         {
-            "img": "property_3.jpg",
+            "img": "property_2",
             "price": 300,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -99,7 +99,7 @@
             }
         },
         {
-            "img": "property_1.jpg",
+            "img": "property_1",
             "price": 500,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -113,7 +113,7 @@
             }
         },
         {
-            "img": "property_2.jpg",
+            "img": "property_2",
             "price": 100,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -129,7 +129,7 @@
     ],
     [
         {
-            "img": "img/property_3.jpg",
+            "img": "property_3",
             "price": 400,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -143,7 +143,7 @@
             }
         },
         {
-            "img": "property_1.jpg",
+            "img": "property_1",
             "price": 500,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -157,7 +157,7 @@
             }
         },
         {
-            "img": "property_2.jpg",
+            "img": "property_3",
             "price": 100,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -171,7 +171,7 @@
             }
         },
         {
-            "img": "img/property_3.jpg",
+            "img": "property_2",
             "price": 400,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -185,7 +185,7 @@
             }
         },
         {
-            "img": "property_1.jpg",
+            "img": "property_1",
             "price": 500,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -199,7 +199,7 @@
             }
         },
         {
-            "img": "property_2.jpg",
+            "img": "property_2",
             "price": 100,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -213,7 +213,7 @@
             }
         },
         {
-            "img": "img/property_3.jpg",
+            "img": "property_3",
             "price": 400,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -227,7 +227,7 @@
             }
         },
         {
-            "img": "property_1.jpg",
+            "img": "property_1",
             "price": 500,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -241,7 +241,7 @@
             }
         },
         {
-            "img": "property_2.jpg",
+            "img": "property_3",
             "price": 100,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -257,7 +257,7 @@
     ],
     [
         {
-            "img": "img/property_3.jpg",
+            "img": "property_2",
             "price": 400,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -271,7 +271,7 @@
             }
         },
         {
-            "img": "property_2.jpg",
+            "img": "property_2",
             "price": 100,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -285,7 +285,7 @@
             }
         },
         {
-            "img": "img/property_3.jpg",
+            "img": "property_3",
             "price": 400,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -299,7 +299,7 @@
             }
         },
         {
-            "img": "img/property_3.jpg",
+            "img": "property_1",
             "price": 400,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -313,7 +313,7 @@
             }
         },
         {
-            "img": "property_2.jpg",
+            "img": "property_2",
             "price": 100,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -327,7 +327,7 @@
             }
         },
         {
-            "img": "img/property_3.jpg",
+            "img": "property_1",
             "price": 400,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -341,7 +341,7 @@
             }
         },
         {
-            "img": "img/property_3.jpg",
+            "img": "property_2",
             "price": 400,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -355,7 +355,7 @@
             }
         },
         {
-            "img": "property_2.jpg",
+            "img": "property_3",
             "price": 100,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
@@ -369,7 +369,7 @@
             }
         },
         {
-            "img": "img/property_3.jpg",
+            "img": "property_1",
             "price": 400,
             "description": "Fuisque dictum tortor at purus libero",
             "info": {
