@@ -41,7 +41,7 @@ export default class extends React.Component {
 							<li><NavLink className="hide-item" activeClassName="is-active drop-menu-item" to="/sell">Sell</NavLink></li>
 							<li className="drop-down-menu"><button onClick={this.handleShowDropMenu} className="drop-down-button">Action</button></li>
 							{showDropMenu ? 
-								<ul className="drop-menu-list">
+								<ul className="drop-menu-list show-drop-menu-item">
 									<li><NavLink onClick={this.handleShowDropMenu} activeClassName="is-active drop-menu-item" to="/buy">Buy</NavLink></li>
 									<li><NavLink onClick={this.handleShowDropMenu} activeClassName="is-active drop-menu-item" to="/sell">Sell</NavLink></li>
 								</ul>

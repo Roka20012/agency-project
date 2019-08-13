@@ -8,8 +8,8 @@ import { Footer } from "./components/Home";
 import Buy from "./components/Buy";
 import Sell from "./components/Sell";
 import RegisterForm from "./components/Register";
-
-
+import Page404 from "./components/Page404";
+import ItemPage from "./components/ItemPage";
 
 ReactDOM.render(
     <Router>
@@ -19,9 +19,10 @@ ReactDOM.render(
                 <Route path="/contact" component={ContactForm} />
                 <Route path="/login" component={Login} />
                 <Route path="/register" component={RegisterForm} />
+                <Route path="/buy/:id" component={ItemPage} />
                 <Route path="/buy" component={Buy} />
                 <Route path="/sell" component={Sell} />
-                <Route component={App} />
+                <Route component={Page404} />
             </Switch>
             <Footer />
         </div>

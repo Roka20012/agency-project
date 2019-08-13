@@ -32,30 +32,23 @@ export default class extends React.Component {
             countryName = "Russia";
         }
         return (
-            <>
-                {showItemPage ? (
-                    <ItemPage info={this.props} handleShowItemPage={this.handleShowItemPage}/>
-                ) : (
-                    <div className="item" onClick={this.handleShowItemPage}>
-                        <img
-                            className="item-img"
-                            src={Image}
-                            style={{ width: "300px", height: "300px" }}
-                            alt="item-img"
-                        />
-                        <p className="description">{description}</p>
-                        <span className="item-details">
-                            {kitchen} kitchens, {bed} beds, {bath} bathrooms...{" "}
-                            {area}
-                            ftsq
-                        </span>
-                        <p className="item-details">Country {countryName}</p>
-                        <span className="price">
-                            Price ${price} for {action}
-                        </span>
-                    </div>
-                )}
-            </>
+            <div className="item">
+                <img
+                    className="item-img"
+                    src={Image}
+                    style={{ width: "300px", height: "300px" }}
+                    alt="item-img"
+                />
+                <p className="description">{description}</p>
+                <span className="item-details">
+                    {kitchen} kitchens, {bed} beds, {bath} bathrooms... {area}
+                    ftsq
+                </span>
+                <p className="item-details">Country {countryName}</p>
+                <span className="price">
+                    Price ${price} for {action}
+                </span>
+            </div>
         );
     }
 }

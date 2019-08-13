@@ -1,79 +1,29 @@
 import React from "react";
-import "./ItemPage.css";
-import Image from "../../img/property_3.jpg";
+import ItemCard from "./ItemCard";
+import Menu from "../Home";
+import data from "../../mock-api-data.json";
 
 export default props => {
-    let countryName;
-    const {
-        img,
-        price,
-        description,
-        info: { kitchen, bed, bath, area, action, country, id }
-    } = props.info;
-    const { handleShowItemPage } = props;
+    let itemId = +props.match.params.id;
 
-    if (country === "ua") {
-        countryName = "Ukraine";
-    } else {
-        countryName = "Russia";
-    }
+    const getItem = itemId => {
+        let item;
+        data.forEach(el =>
+            el.forEach(e => {
+                if (e.info.id === itemId) {
+                    item = e;
+                }
+            })
+        );
+        return item;
+    };
+    console.log("item is", getItem(itemId));
 
     return (
         <>
-            <div className="material-product-card" onClick={handleShowItemPage}>
-                <div className="img-of-car">
-                    <img
-                        src={Image}
-                        alt="img of merchandise"
-                        style={styles}
-                    />
-                </div>
-                <div className="card-content">
-                    <h1>Home id: {id}</h1>
-                    <ul>
-                        <li>
-                            <span className="facilities">Bathrooms:</span>
-                            <span className="quantity">{bath}</span>
-                        </li>
-                        <li>
-                            <span className="facilities">Beds:</span>
-                            <span className="quantity">{bed}</span>
-                        </li>
-                        <li>
-                            <span className="facilities">Kitchens:</span>
-                            <span className="quantity">{kitchen}</span>
-                        </li>
-                        <li>
-                            <span className="facilities">Country:</span>
-                            <span className="quantity">{country}</span>
-                        </li>
-                        <li>
-                            <span className="facilities">Type:</span>
-                            <span className="quantity">{action}</span>
-                        </li>
-                        <li>
-                            <span className="facilities">Area:</span>
-                            <span className="quantity">{area}</span>
-                        </li>
-                    </ul>
-
-                    <p className="">Description:</p>
-                    <p className="">{description}</p>
-
-                    <div className="price-and-button">
-                        <p className="price-of-product">
-                            <span className="value-of-product">{price} </span>
-                            <span className="currency">$</span>
-                        </p>
-                        <button className="buy-button">Buy Now</button>
-                    </div>
-                </div>
-            </div>
+            <Menu />
+            <h2 className="item-page-title">Item Page</h2>
+            <ItemCard info={getItem(itemId)} />
         </>
     );
 };
-
-const styles = {
-    width: "300px",
-    height: "300px"
-}

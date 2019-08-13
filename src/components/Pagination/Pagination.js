@@ -1,6 +1,7 @@
 import React from "react";
 import Pagination from "react-paginating";
 import HomeItem from "../ItemList/HomeItem";
+import HomeList from "../ItemList";
 import "./Pagination.css";
 
 const limit = 3;
@@ -94,16 +95,13 @@ export default class PaginationApp extends React.Component {
                         </div>
                     )}
                 </Pagination>
-                <section className="item-list">
-                    {!data[currentPage - 1] ? (
+                {!data[currentPage - 1] ? (
+                    <section className="item-list">
                         <div>Nothing to show :(</div>
-                    ) : (
-                        data[currentPage - 1].map(homeInfo => (
-                            <HomeItem {...homeInfo} key={homeInfo.info.id} />
-                        ))
-                    )}
-                </section>
-
+                    </section>
+                ) : (
+                    <HomeList data={data[currentPage - 1]} />
+                )}
                 <Pagination
                     total={total}
                     limit={limit}
